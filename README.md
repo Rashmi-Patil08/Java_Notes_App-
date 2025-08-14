@@ -10,16 +10,22 @@ IDE: VS Code
 Terminal: Command line interface for compilation and execution
 File I/O Classes: FileReader, BufferedReader, FileWriter, BufferedWriter
 
-📁 Project Structure
-java-notes-app/
-├── Note.java
-├── FileManager.java
-├── NotesApp.java
-├── README.md
-└── notes/                  # Auto-created directory
-    ├── app.log            # Application logs
-    ├── notes_index.txt    # Notes index file
-    └── [note_files].txt   # Individual note files
+
+# 📝 Java Notes App
+
+A CLI-based notes manager with file persistence.
+
+## Features
+- Add/view/delete notes
+- File-based storage (`notes.txt`)
+- Exception handling
+
+## How to Run
+```bash
+javac *.java
+java Main
+
+
 🔧 Classes Implementation
 1. Note Class
 
@@ -135,26 +141,3 @@ Guaranteed execution scenarios
 Using Java Logger for error tracking
 Log levels (INFO, WARNING, SEVERE)
 File-based logging system
-
-💻 How to Run
-Prerequisites
-
-Java Development Kit (JDK) 8 or higher
-VS Code or any Java IDE
-Command line access
-
-Compilation and Execution
-bash# Compile all Java files
-javac *.java
-
-# Run the notes application
-java NotesApp
-Sample Usage Flow
-
-Start Application: Run java NotesApp
-Create Notes: Choose option 1 to create new notes
-View Notes: Choose option 2 to see all saved notes
-Edit/Delete: Modify existing notes (options 4-5)
-Test Append Mode: Use option 6 to see append vs overwrite
-Export: Use option 7 to combine all notes
-Exception Demo: Use option 10 to see exception handling
